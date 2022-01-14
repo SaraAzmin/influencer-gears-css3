@@ -13,8 +13,11 @@ body{
 .container{
     max-width: 1500px;
     margin: 0 auto;
-    padding: 0 40px;
+    padding: 50px 100px;
 }
+
+/* menu styles */
+
 nav{
     display: flex;
     justify-content: space-between;
@@ -38,5 +41,48 @@ nav h4{
     font-size: 16px;
     font-weight: 600;
     color: #3A3A3A;
+}
 
+/* intro section styles */
+
+.intro-section{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 50px;
+}
+.intro-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.intro-left h1{
+    font-size: 52px;
+    font-weight: 700;
+    color: #3A3A3A;
+}
+.intro-left p{
+    margin: 20px 0;
+    font-size: 16px;
+    font-weight: 600;
+}
+.intro-left button{
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-weight: 700;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    color: white;
+    background-color: darkcyan;
+}
+.intro-left button i{
+    margin-left: 5px;
+}
+
+.intro-right img{
+    /* width: 100%; */
+    width: 440px;
+    height: 414px;
+    margin-left: 100px;
 }
