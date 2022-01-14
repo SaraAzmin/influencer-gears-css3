@@ -86,3 +86,13 @@ nav h4{
     height: 414px;
     margin-left: 100px;
 }
+
+/* brands styles */
+
+.brand-logo{
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+}
+.brand-logo img{
+    margin: 20px 30px;
+}
