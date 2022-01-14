@@ -1,5 +1,5 @@
 /* font style  */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@700&family=Poppins:wght@400;500;600;700&display=swap');
 
 /* common styles */
 *{
@@ -120,4 +120,37 @@ h2{
     margin-bottom: 30px;
     box-shadow: 0px 5.34229px 13.3557px rgba(0, 0, 0, 0.05);
     border-radius: 5px;
+}
+.product-rate{
+    display: flex;
+}
+.collections span{
+    float: right;
+} 
+
+/* bonus part  */
+
+/* footer styles */
+
+footer{
+    text-align: center;
+    padding: 30px;
+    background-color: darkcyan;
+    color: white;
+}
+footer h3{
+    font-size: 24px;
+    font-weight: 700;
+}
+footer span{
+    display: block;
+    font-size: 14px;
+    font-weight: 700;
+    font-family: 'Manrope', sans-serif;
+}
+.footer-icons{
+    margin-top: 17px;
+}
+.fab{
+    padding: 10px;
 }
