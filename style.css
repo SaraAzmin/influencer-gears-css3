@@ -49,6 +49,12 @@ nav h4{
     font-size: 24px;
     font-weight: 700;
 }
+#nav-toggle{
+    display: none;
+}
+.nav-toggle-mobile{
+    display: none;
+}
 .nav-menu{
     display: flex;
     flex-direction: row;
@@ -68,7 +74,7 @@ nav h4{
 .intro-section{
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    grid-gap: 50px;
+    grid-gap: 150px;
 }
 .intro-left{
     display: flex;
@@ -95,9 +101,9 @@ nav h4{
 
 .intro-right img{
     /* width: 100%; */
-    width: 440px;
-    height: 414px;
-    margin-left: 100px;
+    width: 400px;
+    height: 380px;
+    margin-left: 150px;
 }
 .intro-right:hover img{
     transform: rotate(360deg);
@@ -250,12 +256,40 @@ footer span{
         padding: 0;
         overflow-x: hidden;
     }
+    .container{
+        margin: 0 auto;
+        padding: 50px 50px;
+    }
+    .nav-toggle-mobile{
+        display: block;
+        font-size: 24px;
+    }
+    .nav-menu{
+        position: fixed;
+        top: 80px;
+        left: 0;
+        width: 50%;
+        flex-direction: column;
+        align-items: center;
+        background-color: palevioletred;
+        color: white;
+        padding: 20px 0;
+        transform: translateY(-550px) ;
+    }
+
+    #nav-toggle:checked ~ .nav-menu{
+        transform: translateY(0px);
+    }
+    nav h4{
+        order: 2;
+    }
     .intro-section{
         grid-template-columns: repeat(1,1fr);
         justify-content: center;
     }
     .intro-left{
         text-align: center;
+        order: 2;
     }
 .intro-left button{
     margin: auto;
@@ -273,7 +307,6 @@ footer span{
         /* margin: 50px auto; */
         height: 50px;
         width: 100px;
-        
     }
     .collections{
     grid-template-columns: repeat(1, 1fr);
