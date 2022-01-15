@@ -16,6 +16,10 @@ body{
     padding: 50px 100px;
 }
 
+.color{
+    color: #3A3A3A;
+}
+
 /* menu styles */
 
 nav{
@@ -27,7 +31,6 @@ nav{
 nav h4{
     font-size: 24px;
     font-weight: 700;
-    color: #3A3A3A;
 }
 .nav-menu{
     display: flex;
@@ -41,7 +44,6 @@ nav h4{
     text-decoration: none;
     font-size: 16px;
     font-weight: 600;
-    color: #3A3A3A;
 }
 
 /* intro section styles */
@@ -60,13 +62,11 @@ nav h4{
 .intro-left h1{
     font-size: 52px;
     font-weight: 700;
-    color: #3A3A3A;
 }
 .intro-left p{
     margin: 20px 0;
     font-size: 16px;
     font-weight: 600;
-    color: #3A3A3A;
 }
 .intro-left button{
     padding: 10px 15px;
@@ -76,7 +76,7 @@ nav h4{
     display: flex;
     align-items: center;
     color: white;
-    background-color: crimson;
+    background-color: palevioletred;
     border: none;
 }
 .intro-left button i{
@@ -128,8 +128,35 @@ h2{
     box-shadow: 0px 5.34229px 13.3557px rgba(0, 0, 0, 0.05);
     border-radius: 5px;
 }
+.product-details h3{
+    font-size: 28px;
+    font-weight: 500;
+    color: #18191F;
+}
+.product-details h4{
+    font-weight: 400;
+    font-size: 24px;
+    color: #000000;
+}
 .product-rate{
     display: flex;
+    align-items: center;
+}
+.product-rate i{
+    color: #FB8200;
+    font-size: 14px;
+}
+.product-rate span{
+    font-size: 14px;
+    font-weight: 700;
+    color: #5E6366;
+    margin-left: 8px;
+}
+.product-details p{
+font-size: 14px;
+font-weight: 700;
+color: #787885;
+margin-top: 5px;
 }
 #see-more{
     position: absolute;
@@ -140,6 +167,8 @@ h2{
     display: flex;
     align-items: center;
     margin-right: 30px;
+    color:palevioletred;
+    ;
 } 
 
 /* bonus part  */
@@ -149,7 +178,7 @@ h2{
 footer{
     text-align: center;
     padding: 30px;
-    background-color: darkcyan;
+    background-color: palevioletred;
     color: white;
 }
 footer h3{
