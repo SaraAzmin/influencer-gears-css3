@@ -66,16 +66,18 @@ nav h4{
     margin: 20px 0;
     font-size: 16px;
     font-weight: 600;
+    color: #3A3A3A;
 }
 .intro-left button{
-    padding: 10px 20px;
-    border-radius: 20px;
+    padding: 10px 15px;
+    border-radius: 30px;
     font-weight: 700;
     font-size: 16px;
     display: flex;
     align-items: center;
     color: white;
-    background-color: darkcyan;
+    background-color: crimson;
+    border: none;
 }
 .intro-left button i{
     margin-left: 5px;
