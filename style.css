@@ -248,9 +248,9 @@ footer span{
     padding: 10px;
 } 
 
-/* media query for responsiveness */
+/* media query for mobile */
 
-@media  screen and (max-width:700px) {
+@media only screen and (max-width:700px) {
     body {
         margin: 0;
         padding: 0;
@@ -303,19 +303,51 @@ footer span{
         align-content: center;
     }
     .brand-logo img{
-        /* display: block; */
-        /* margin: 50px auto; */
         height: 50px;
         width: 100px;
     }
-    .collections{
+    .collections, .collaborations{
     grid-template-columns: repeat(1, 1fr);
     justify-content: center;
     margin-left: 50px;
     }
-    .collaborations{
-    grid-template-columns: repeat(1, 1fr);
-    justify-content: center;
-    grid-row-gap: 50px;
+}
+
+/* media query for tablet */
+
+@media only screen and (min-width:701px) and (max-width:950px) {
+    body {
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
     }
+    .container{
+        margin: 0 auto;
+        padding: 50px 50px;
+    }
+    .intro-section{
+        grid-template-columns: repeat(1,1fr);
+        justify-content: center;
+    }
+    .intro-left{
+        text-align: center;
+        order: 2;
+    }
+.intro-left button{
+    margin: auto;
+}
+.intro-right{
+    display: flex;
+    justify-content: center;
+}
+    .intro-right img{
+        margin: 0;
+    }
+    .collections, .collaborations{
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+        align-items: center;
+        margin-left: 50px;
+        }
+    
 }
