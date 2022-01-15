@@ -100,7 +100,6 @@ nav h4{
 }
 
 .intro-right img{
-    /* width: 100%; */
     width: 400px;
     height: 380px;
     margin-left: 150px;
@@ -273,9 +272,12 @@ footer span{
         flex-direction: column;
         align-items: center;
         background-color: palevioletred;
-        color: white;
         padding: 20px 0;
         transform: translateY(-550px) ;
+    }
+    .nav-menu li a{
+        color: white;
+        font-size: 20px;
     }
 
     #nav-toggle:checked ~ .nav-menu{
