@@ -92,6 +92,10 @@ nav h4{
 
 /* brands styles */
 
+.brands{
+    margin: 0px 20px;
+    box-shadow: 0px 2px 0px #C0CCDA, 0px -2px 0px #C0CCDA;
+}
 .brand-logo{
     display: grid;
     grid-template-columns: repeat(7,1fr);
