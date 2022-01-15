@@ -207,7 +207,8 @@ nav h4{
     display: none;
     position: absolute;
     text-align: center;
-    top: 0;
+    bottom:  0px;
+    color: white;
 }
 .collab-item:hover .person-pic img{
     transform: scale(1.2);
@@ -216,7 +217,7 @@ nav h4{
 .collab-item:hover .person-name h3{
     display: block;
     padding: 20px 0;
-    background-color: rgba(245, 245, 220, 0.514);
+    background-color: rgba(216, 112, 147, 0.849);
     width: 100%;
 }
 .explore-button{
