@@ -109,12 +109,10 @@ nav h4{
 /* brands styles */
 
 .brands{
-    margin: 0px 20px;
+    margin: 0px 40px;
     box-shadow: 0px 2px 0px #C0CCDA, 0px -2px 0px #C0CCDA;
-}
-.brand-logo{
     display: grid;
-    grid-template-columns: repeat(7,1fr);
+    justify-content: center;
 }
 .brand-logo img{
     margin: 20px 30px;
@@ -186,7 +184,7 @@ nav h4{
 .collaborations{
     display: grid;
     grid-template-columns: repeat(4,1fr);
-    grid-gap: 10px;
+    grid-gap: 20px;
     margin: 50px 50px;
 }
 .collab-item{
@@ -242,4 +240,49 @@ footer span{
 }
 .fab{
     padding: 10px;
+} 
+
+/* media query for responsiveness */
+
+@media  screen and (max-width:700px) {
+    body {
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+    .intro-section{
+        grid-template-columns: repeat(1,1fr);
+        justify-content: center;
+    }
+    .intro-left{
+        text-align: center;
+    }
+.intro-left button{
+    margin: auto;
+}
+    .intro-right img{
+        margin: 20px 20px;
+    }
+    .brands{
+        grid-column-gap: 30px;
+        justify-content: center;
+        align-content: center;
+    }
+    .brand-logo img{
+        /* display: block; */
+        /* margin: 50px auto; */
+        height: 50px;
+        width: 100px;
+        
+    }
+    .collections{
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: center;
+    margin-left: 50px;
+    }
+    .collaborations{
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: center;
+    grid-row-gap: 50px;
+    }
 }
